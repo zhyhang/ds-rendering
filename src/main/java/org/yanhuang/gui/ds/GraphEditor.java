@@ -26,7 +26,6 @@ import java.net.URL;
 import java.text.NumberFormat;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
 
 public class GraphEditor extends BasicGraphEditor {
 	/**
@@ -434,7 +433,6 @@ public class GraphEditor extends BasicGraphEditor {
 		private static final long serialVersionUID = -6833603133512882012L;
 
 		/**
-		 *
 		 * @param graph
 		 */
 		public CustomGraphComponent(mxGraph graph) {
@@ -461,7 +459,7 @@ public class GraphEditor extends BasicGraphEditor {
 		/**
 		 * Overrides drop behaviour to set the cell style if the target
 		 * is not a valid drop target and the cells are of the same
-		 * type (eg. both vertices or both edges). 
+		 * type (eg. both vertices or both edges).
 		 */
 		public Object[] importCells(Object[] cells, double dx, double dy,
 		                            Object target, Point location) {
@@ -617,12 +615,9 @@ public class GraphEditor extends BasicGraphEditor {
 	}
 
 	/**
-	 *
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		final Locale aDefault = Locale.getDefault();
 
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
