@@ -8,17 +8,24 @@
 	<artifactId>ds-rendering</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<properties>
-		<version.jgrahx>3.9.12</version.jgrahx>
+		<version.jgrahx>3.9.12.1</version.jgrahx>
 	</properties>
 
 	<dependencies>
+		<!-- for develop -->
 		<dependency>
 			<groupId>com.mxgraph</groupId>
 			<artifactId>jgraphx</artifactId>
 			<version>${version.jgrahx}</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/jgraphx.jar</systemPath>
 		</dependency>
+		<!-- for online -->
+		<!--<dependency>-->
+			<!--<groupId>com.mxgraph</groupId>-->
+			<!--<artifactId>jgraphx</artifactId>-->
+			<!--<version>${version.jgrahx}</version>-->
+			<!--<scope>system</scope>-->
+			<!--<systemPath>${project.basedir}/lib/jgraphx.jar</systemPath>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<build>
